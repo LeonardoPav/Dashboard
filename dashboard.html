@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="fonts/segoe/stylefont.css">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item sidebar">
+            <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+            <nav class="menu_vert">
+                
+                <h2>
+                    Company
+                </h2>
+                <hr>
+                <ul class="menu">
+                    <li>
+                        <a href="#" class="li_img dash active">
+                            <span class="dash">Dashboard</span>
+                        </a>
+                    </li>
+                     <li>
+                        <a href="profile.html" class="li_img user">
+                            <span>User Profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="li_img maps">
+                            <span>Maps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="li_img notify">
+                            <span>Notifications</span>
+                        </a>
+                    </li>
+                     <li> 
+                        <a href="#" class="li_img support">
+                            <span>Support</span>
+                        </a>
+                    </li>
+                </ul>
+        
+            </nav>
+
+        </div>
+        <div class="grid-item header">
+            <h2>
+                Dashboard
+            </h2>
+        </div>
+        <div class="grid-item top green">
+            <img src="image/data_white.svg" alt="" class="green">
+            <p class="gray"> Used Space</p>
+            <p class="big"> 49/50 gb</p>
+            <hr>
+            <p class="comment space">Get more space...</p>
+        </div>
+        <div class="grid-item top yellow">
+            <img src="image/shop_white.svg" alt="" class="yellow">
+            <p class="gray"> Revenue</p>
+            <p class="big"> $ 34,245</p>
+            <hr>
+            <p class="comment last">Last 24 hours</p>
+        </div>
+        <div class="grid-item top blue">
+            <img src="image/tag_white.svg" alt="" class="blue">
+            <p class="gray">Fixed Issues</p>
+            <p class="big"> 75</p>
+            <hr>
+            <p class="comment track">Track from Github</p>
+        </div>
+        <div class="grid-item top pink">
+            <img src="image/paperplane_white.svg" alt="" class="pink">
+            <p class="gray">Followers</p>
+            <p class="big"> +245</p>
+            <hr>
+            <p class="comment update">Just updated</p>
+        </div>
+        <div class="grid-item middle green">
+            <img src="image/graphics.svg" alt="" class="green">
+            <p class="big"> Daily Sales</p>
+            <p class="gray"> 55% increase in today sales</p>
+            <hr>
+            <p class="comment time">updated 4 minutes ago</p>
+        </div>
+        <div class="grid-item middle yellow">
+            <img src="image/graphics.svg" alt="" class="yellow">
+            <p class="big"> Email Subscription</p>
+            <p class="gray"> Last Campaign Perfomance</p>
+            <hr>
+            <p class="comment time">campaign sent 2 days ago</p>
+        </div>
+        <div class="grid-item middle blue">
+            <img src="image/graphics.svg" alt="" class="blue">
+            <p class="big"> Completed Tasks</p>
+            <p class="gray"> Last Campaign Perfomance</p>
+            <hr>
+            <p class="comment time">campaign event 2 days ago</p>
+        </div>
+        <div class="grid-item bottom yellow">
+            <div class="task yell">
+                <p> Tasks:</p>
+                <span class="bug"> Bugs</span>
+                <span class="web"> Website</span>
+                <span class="server"> Server</span>
+            </div>
+            <div class="check">
+            <label for="aggr">
+                <input type="checkbox" checked id="aggr">
+                <span class="edit">Sign contact for "What are conference organizers afraid of?"</span>
+            </label>
+            <hr>
+            <label for="conf">
+                <input type="checkbox" id="conf">
+                <span class="edit">Lines From Great Russian Literature? Or E-mails From My boss?"</span>
+            </label>
+            <hr>
+            <label for="organ">
+                <input type="checkbox" id="organ">
+                <span class="edit">Sign contact for "What are conference organizers afraid of?</span>
+            </label>
+            <hr>
+            <label for="apply">
+                <input type="checkbox" checked id="apply">
+                <span class="edit">Sign contact for "What are conference organizers afraid of?"</span>
+            </label>
+            </div>
+        </div>
+        <div class="grid-item bottom blue">
+            <div class="blu">
+                <p class="big">Employees Stats</p>
+                <p>New employs on 19th January, 2023</p>
+            </div>
+
+            <div class="table">
+                <div class="id">
+                    <p>ID</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <div class="name">
+                    <p>Name</p>
+                    <p>Dakota Rice</p>
+                    <p>Dakota Rice</p>
+                    <p>Dakota Rice</p>
+                    <p>Dakota Rice</p>
+                </div>
+                <div class="cash">
+                    <p>Salary</p>
+                    <p>$36.738</p>
+                    <p>$36.738</p>
+                    <p>$36.738</p>
+                    <p>$36.738</p>
+                </div>
+                <div class="country">
+                    <p>Country</p>
+                    <p>Niger</p>
+                    <p>Niger</p>
+                    <p>Niger</p>
+                    <p>Niger</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <nav class="menu_row">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span>about</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>blog</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>licenses</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <p class="signature">
+                    2023 - made with love
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
