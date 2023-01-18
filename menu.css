@@ -1,0 +1,220 @@
+.menu_vert {
+    background-color: rgb(241, 239, 239);
+    height: 100vh;
+    border-right: 3px solid gray;
+    position: sticky;
+    top: 0;
+    left: 0;
+    max-width: 300px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+#menu__toggle {
+    display: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+ 
+.menu__btn {
+    display: flex; 
+    align-items: center;  
+    position: fixed;
+    top: 35px;
+    left: 10px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    visibility: hidden;
+}
+  
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+}
+  
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+  
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+  
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+  
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu_vert {
+    visibility: visible;
+    left: 0;
+    z-index: 2;
+}
+
+h2 {
+    padding: 30px 30px;
+    height: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: gray;
+}
+
+nav ul li a.dash::before {
+    content: url('image/dashboard_gray.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.user::before {
+    content: url('image/account_gray.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.maps::before {
+    content: url('image/map_gray.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.notify::before {
+    content: url('image/notify_gray.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.support::before {
+    content: url('image/support_gray.svg');
+    width: 15px;
+    height: 15px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.active {
+    background-color: rgb(156, 27, 70);
+    color: white;
+}
+
+.li_img{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    gap: 20px;
+}
+
+.menu_vert ul li a:hover{
+    background: rgb(156, 27, 70);
+    color: white;
+}
+
+nav ul li a.dash:hover::before {
+    content: url('image/dashboard_white.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.user:hover::before {
+    content: url('image/account_white.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.maps:hover::before {
+    content: url('image/map_white.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.notify:hover::before {
+    content: url('image/notify_white.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+nav ul li a.support:hover::before {
+    content: url('image/support_white.svg');
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .menu_vert {
+        visibility: hidden;
+        opacity: 0.9;
+        position: fixed;
+    }
+
+    .menu__btn {
+        visibility: visible;
+        z-index: 3;
+    }
+
+    h2 {
+        padding: 30px 50px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .menu__btn {
+        left: 10px;
+    }
+
+}

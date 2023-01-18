@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(194, 194, 194);
+}
+
+.container {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+.header {
+    flex-grow: 0.2;
+}
+
+.action {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 3;
+}
+
+.left {
+    width: 55%;
+    background-color: rgb(241, 239, 239);
+    align-self: flex-start;
+    padding-bottom: 30px;
+    box-shadow: 10px 10px 10px gray;
+    position: relative;
+}
+
+.right {
+    background-color: rgb(241, 239, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    position: relative;
+    align-self: start;
+    gap: 20px;
+    box-shadow: 10px 10px 10px gray;
+}
+
+.right img {
+    position: absolute;
+    top: -30px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.gray {
+    padding-top: 50px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.big {
+    font-weight: 500;
+}
+
+.comment {
+    padding: 0 20px 20px 20px;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin: 10px 0 0 10px;
+    border-top: 1px solid gray;
+    flex-grow: 0.5;
+}
+
+.menu_row ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-left: 10px;
+}
+
+.menu_row ul li a {
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.footer .menu_row ul li a span:hover {
+    background-color: rgb(165, 162, 162);
+}
+
+.footer .signature {
+    padding-right: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.fname, .lname {
+    width: 50%;
+}
+
+input[type=text], input[type=email], textarea {
+    width: 100%;
+}
+
+.address {
+    padding: 10px;
+}
+
+.area {
+    width: 100%;
+    padding: 10px;
+}
+
+input, textarea{
+    background-color: rgb(241, 239, 239);
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.sub {
+    padding: 10px;
+    text-align: end;
+}
+
+input[type=submit] {
+    background-color: rgb(156, 27, 70);
+    width: 30%;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: rgb(156, 27, 70);
+    width: 90%;
+    position: absolute;
+    color: white;
+    padding: 20px 10px;
+    top: -30px;
+    left: 20px;
+}
+
+form {
+    padding-top: 80px;
+}
+
+.company, .username, .mail, .city, .code {
+    flex-grow: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .action {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .left, .right{
+        width: 100%;
+    }
+
+    .footer {
+        width: 97%;
+    }
+
+    .red {
+        left: 30px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        position: absolute;
+    }
+
+    .menu_row ul {
+        gap: 5px;
+     }
+    
+    .menu_row ul li a {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    
+    .footer .signature {
+        padding-right: 10px;
+        font-size: 10px;
+    }
+
+    .left {
+        margin-top: 50px;
+    }
+
+    .content {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu_row ul li a {
+        font-size: 10px;
+        padding-top: 20px;
+    }
+    
+    label {
+        font-size: 10px;
+    }
+
+    .red {
+        left: 20px;
+    }
+
+    .sub {
+        text-align: left;
+    }
+
+    input[type=submit] {
+        width: 40%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-left: 5px;
+    }
+
+    .signature {
+        text-align: right;
+        padding-right: 0;
+        padding-left: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
